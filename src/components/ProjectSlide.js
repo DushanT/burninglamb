@@ -30,7 +30,9 @@ export default function Slide({ title, description, tags, image, index }) {
           </h3>
           <div className="mb-4 flex flex-wrap gap-1 md:mb-0">
             {tags.map((tag) => (
-              <Button isAlwaysSmall>{tag}</Button>
+              <Button key={tag} isAlwaysSmall>
+                {tag}
+              </Button>
             ))}
           </div>
         </div>
