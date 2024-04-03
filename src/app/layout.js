@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="overflow-x-hidden">
         <div className="text-body mx-auto max-w-[var(--max-width)] px-4 md:px-[30px]">
-          <Header data-aos="zoom-out" />
+          <Header />
           <main>{children}</main>
         </div>
         <Footer />
