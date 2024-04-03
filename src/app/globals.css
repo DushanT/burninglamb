@@ -2,32 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: "Darker Grotesque"; /*, system-ui, sans-serif;*/
+    font-weight: 500; /* Medium is default weight */
+  }
+  @font-face {
+    font-family: "Dirtyline 36daysoftype 2022";
+    font-display: swap;
+    src: url(/fonts/Dirtyline-36-daysoftype/woff/Dirtyline\ 36daysoftype\ 2022.woff2)
+      format("woff2");
+  }
+  /* @font-face {
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Darker_Grotesque/static/DarkerGrotesque-Regular.ttf)
+      format("woff2");
+  } */
+  @font-face {
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(/fonts/Darker_Grotesque/static/DarkerGrotesque-Medium.ttf)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(/fonts/Darker_Grotesque/static/DarkerGrotesque-SemiBold.ttf)
+      format("woff2");
+  }
+  @font-face {
+    font-family: "Darker Grotesque";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(/fonts/Darker_Grotesque/static/DarkerGrotesque-Bold.ttf)
+      format("woff2");
   }
 }
 
+/* :root {
+  --foreground-color: #000000;
+  --background-color: #d6dbdc;
+} */
+
+/* Forced dark mode */
+/* @media (prefers-color-scheme: dark) { */
+:root {
+  --foreground-rgb: #f2ebde;
+  --background-rgb: #171717;
+  --bg-footer: #121212;
+  --bg-secondary: #1c1c1c;
+  --max-width: 1440px;
+}
+/* } */
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--foreground-rgb);
+  background: var(--background-rgb);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .text-mixed {
+    text-orientation: mixed;
+  }
+  .writing-vertical-lr {
+    writing-mode: vertical-lr;
+  }
+  .marker-none::marker {
+    content: "";
+  }
+}
+
+.bl-title {
+  aspect-ratio: 343/70;
+  background-image: url(/svg/title.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slick-slider {
+  @apply grid !important;
+}
+.slick-list {
+  @apply order-2 !important;
+}
+.slick-dots {
+  @apply relative bottom-0 order-1 mb-6 flex justify-between gap-4 sm:justify-start md:mb-10 md:gap-4 !important;
+}
+.slick-dots li {
+  @apply m-0 h-4 w-4 list-none rounded-full border border-solid border-gray-50 bg-transparent transition-all !important;
+}
+.slick-dots li.slick-active {
+  @apply w-8 border-primary-500 bg-primary-500 !important;
+}
+.slick-dots li button {
+  @apply m-0 h-full w-full rounded-full p-0 focus:ring-8 !important;
+}
+.slick-dots li button::before {
+  @apply content-none !important;
+}
+.slick-track {
+  @apply flex gap-2 !important;
+}
+.slick-prev,
+.slick-next {
+  @apply h-full opacity-0 hover:bg-[var(--bg-secondary)] hover:opacity-100 !important;
+  background: url(/svg/arrow-right-small.svg) 100% no-repeat !important;
+  background-size: contain !important;
+}
+.slick-prev {
+  @apply top-0 scale-x-[-1] !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  @apply content-none !important;
+}
+
+@keyframes icon-lamb {
+  to { background-position: -423px; }
+}
+
+
+.icon-lamb {
+  display: flex;
+  width: 32.5px;
+  height: 24px;
+  background-image: url("/images/icon-lamb.png");
+  background-size: 32.5px 24px;
+}
+.icon-lamb:hover {
+  background-image: url("/images/icon-lamb-sprite.png");
+  background-size: unset;
+  background-size: 423px 24px;
+  animation: icon-lamb 2s steps(14) infinite;
+}
+
+@keyframes icon-surface {
+  to { background-position: -350px; }
+}
+.icon-surface {
+  display: flex;
+  width: 35px;
+  height: 32px;
+  background-image: url("/images/icon-surface-sprite.png");
+}
+.icon-surface:hover {
+  animation: icon-surface 1s steps(10) infinite;
+}
+
+@keyframes icon-cube {
+  to { background-position: -297.5px; }
+}
+.icon-cube {
+  display: flex; 
+  width: 29.7px;
+  height: 32px;
+  background-image: url("/images/icon-cube-sprite.png");
+}
+.icon-cube:hover {
+  animation: icon-cube 1s steps(10) infinite;
 }
