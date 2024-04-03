@@ -134,12 +134,13 @@ body {
 
 
 .icon-lamb {
-  display: flex;
+  display: block;
   width: 32.5px;
   height: 24px;
   background-image: url("/images/icon-lamb.png");
   background-size: 32.5px 24px;
 }
+
 .icon-lamb:hover {
   background-image: url("/images/icon-lamb-sprite.png");
   background-size: unset;
@@ -155,6 +156,7 @@ body {
   width: 35px;
   height: 32px;
   background-image: url("/images/icon-surface-sprite.png");
+  background-size: 350px 32px;
 }
 .icon-surface:hover {
   animation: icon-surface 1s steps(10) infinite;
@@ -168,6 +170,7 @@ body {
   width: 32px;
   height: 32px;
   background-image: url("/images/icon-cube-sprite.png");
+  background-size: 320px 32px;
 }
 .icon-cube:hover {
   animation: icon-cube 1s steps(10) infinite;
@@ -180,6 +183,7 @@ body {
   width: 32px;
   height: 32px;
   background-image: url("/images/icon-globe-sprite.png");
+  background-size: 320px 32px;
 }
 .icon-globe:hover {
   animation: icon-globe 1s steps(10) infinite;
@@ -192,7 +196,28 @@ body {
   width: 32px;
   height: 32px;
   background-image: url("/images/icon-bezier-sprite.png");
+  background-size: 320px 32px;
 }
 .icon-bezier:hover {
   animation: icon-bezier 1s steps(10) infinite;
+}
+@media (-webkit-min-device-pixel-ratio: 2) {
+  .icon-lamb {
+    background-image: url("/images/icon-lamb@2x.png");
+  }
+  .icon-lamb:hover {
+    background-image: url("/images/icon-lamb-sprite@2x.png");
+  }
+  .icon-surface {
+    background-image: url("/images/icon-surface-sprite@2x.png");
+  }
+  .icon-cube {
+    background-image: url("/images/icon-cube-sprite@2x.png");
+  }
+  .icon-globe {
+    background-image: url("/images/icon-globe-sprite@2x.png");
+  }
+  .icon-bezier {
+    background-image: url("/images/icon-bezier-sprite@2x.png");
+  }
 }

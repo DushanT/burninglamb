@@ -10,8 +10,23 @@ export default function AboutGrid({ ...other }) {
         <div className="text-mixed writing-vertical-lr text-2xs leading-0.8 mx-auto w-3 rotate-180 whitespace-nowrap py-2 text-center font-heading lowercase md:text-xs">
           Creative studio
         </div>
-        <div className="border-t-0.5 p-2 md:p-2.5 md:px-2 md:pt-1.5">
-          <Image src="/svg/lamb.svg" alt="" width={22} height={18} priority />
+        <div className="group border-t-0.5 p-2 md:p-2.5 md:px-2 md:pt-1.5">
+          <Image
+            src="/svg/lamb.svg"
+            alt=""
+            width={22}
+            height={18}
+            priority
+            className="group-hover:hidden"
+          />
+          <Image
+            src="/svg/lamb-primary.svg"
+            alt=""
+            width={22}
+            height={18}
+            priority
+            className="hidden group-hover:block"
+          />
         </div>
       </div>
       <div className="grid grid-rows-[auto,1fr]">
