@@ -12,6 +12,7 @@ export default function ProjectsCarousel() {
     arrows: true,
     infinite: true,
     speed: 500,
+    // desktop first approach
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
