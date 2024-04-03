@@ -1,9 +1,19 @@
 import Image from "next/image";
 import Button from "./Button";
 
-export default function Slide({ title, description, tags, image, index }) {
+export default function Slide({
+  title,
+  description,
+  tags,
+  image,
+  index,
+  ...other
+}) {
   return (
-    <article className="group relative overflow-hidden rounded-xl bg-[var(--bg-secondary)]">
+    <article
+      className="group relative overflow-hidden rounded-xl bg-[var(--bg-secondary)]"
+      {...other}
+    >
       <div className="md:hidden">
         <Image
           src={`/images/projects/mobile/${image}.png`}

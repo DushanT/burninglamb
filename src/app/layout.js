@@ -1,9 +1,6 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata = {
   title: "Burning lamb",
@@ -13,7 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="overflow-x-hidden">
         <div className="text-body mx-auto max-w-[var(--max-width)] px-4 md:px-[30px]">
           <a
             className="sr-only font-heading lowercase focus:not-sr-only"
@@ -21,7 +18,7 @@ export default function RootLayout({ children }) {
           >
             Skip to main content
           </a>
-          <Header />
+          <Header data-aos="zoom-out" />
           <main>{children}</main>
         </div>
         <Footer />

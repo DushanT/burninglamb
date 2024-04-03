@@ -10,7 +10,10 @@ export default function Footer() {
       className="bg-[var(--bg-footer)] pb-20 pt-12 md:pb-8 md:pt-20"
     >
       <div className="mx-auto max-w-[var(--max-width)] px-4 md:px-[30px]">
-        <h2 className="text-10xl md:text-12xl -tracking-4 leading-0.9 mb-6 font-heading lowercase md:mb-8">
+        <h2
+          className="text-10xl md:text-12xl -tracking-4 leading-0.9 mb-6 font-heading lowercase md:mb-8"
+          data-aos="fade-down"
+        >
           Get in touch
         </h2>
         <div className="mb-8 md:mb-5">

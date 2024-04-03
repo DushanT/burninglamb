@@ -1,6 +1,9 @@
-export default function Card({ number, title, icon, description }) {
+export default function Card({ number, title, icon, description, ...other }) {
   return (
-    <div className="grid place-items-stretch rounded-lg border-0.5 border-text-900 bg-[var(--bg-secondary)] px-5 pb-7 pt-4 md:pb-9 md:pt-5">
+    <div
+      className="grid place-items-stretch rounded-lg border-0.5 border-text-900 bg-[var(--bg-secondary)] px-5 pb-7 pt-4 md:pb-9 md:pt-5"
+      {...other}
+    >
       <h3 className="mb-6 xl:mb-[110px]">
         <span className="md:text-11xl leading-0.8 mb-6.5 flex items-baseline justify-between text-8xl font-semibold text-primary-500 md:mb-6">
           <span>{number}</span>

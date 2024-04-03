@@ -1,8 +1,12 @@
 import { twMerge } from "tailwind-merge";
 
-export default function About({ className }) {
+export default function About({ className, ...other }) {
   return (
-    <section id="about" className={twMerge("grid lg:grid-cols-2", className)}>
+    <section
+      id="about"
+      className={twMerge("grid lg:grid-cols-2", className)}
+      {...other}
+    >
       <h2 className="mb-8 flex items-baseline gap-4 md:gap-6">
         <span className="-tracking-5 leading-0.9 text-sm font-bold text-primary-500 md:text-2xl">
           .01

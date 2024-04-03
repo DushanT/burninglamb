@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 const ServicesAccordion = ({ className }) => (
   <ul className={twMerge("border-t-0.5 p-0", className)}>
     {services.map(({ number, title, items }) => (
-      <li key={title} className="list-none">
+      <li key={title} className="list-none" data-aos="fade-up">
         <details className="group border-b-0.5 pt-5 open:border-none">
           <summary className="marker-none mb-2 mt-3 flex justify-between group-open:mb-2.5">
             <ServiceTitle number={number}>{title}</ServiceTitle>

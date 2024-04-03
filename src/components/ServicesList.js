@@ -11,6 +11,7 @@ const ServicesList = ({ className }) => (
         <li
           key={title}
           className="group grid min-h-40 list-none grid-cols-[1fr,auto] items-center gap-5 border-t-0.5 border-text-900 py-3 hover:bg-[var(--bg-secondary)]"
+          data-aos="fade-up"
         >
           <ServiceTitle
             number={number}

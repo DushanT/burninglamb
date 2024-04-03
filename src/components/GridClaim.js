@@ -1,8 +1,11 @@
 import Image from "next/image";
 
-export default function AboutGrid() {
+export default function AboutGrid({ ...other }) {
   return (
-    <div className="grid max-w-[250px] grid-cols-[auto,1fr] rounded-lg border-0.5 md:max-w-[455px]">
+    <div
+      className="grid max-w-[250px] grid-cols-[auto,1fr] rounded-lg border-0.5 md:max-w-[455px]"
+      {...other}
+    >
       <div className="grid grid-rows-[1fr,auto]">
         <div className="text-mixed writing-vertical-lr text-2xs leading-0.8 mx-auto w-3 rotate-180 whitespace-nowrap py-2 text-center font-heading lowercase md:text-xs">
           Creative studio

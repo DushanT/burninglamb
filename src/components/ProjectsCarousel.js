@@ -44,7 +44,13 @@ export default function ProjectsCarousel() {
     <div className="slider-container">
       <Slider {...settings}>
         {projects.map((project, index) => (
-          <Slide key={project.title} index={index} {...project} />
+          <Slide
+            key={project.title}
+            index={index}
+            {...project}
+            data-aos="fade-up"
+            data-aos-delay={index * 50}
+          />
         ))}
       </Slider>
     </div>
