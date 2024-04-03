@@ -145,7 +145,7 @@ body {
   background-image: url("/images/icon-lamb-sprite.png");
   background-size: unset;
   background-size: 423px 24px;
-  animation: icon-lamb 2s steps(14) infinite;
+  animation: icon-lamb 1.5s steps(14) infinite;
 }
 
 @keyframes icon-surface {
