@@ -9,7 +9,7 @@ const ServicesAccordion = ({ className }) => (
     {services.map(({ number, title, items }) => (
       <li key={title} className="list-none" data-aos="fade-up">
         <details className="group border-b-0.5 pt-5 open:border-none">
-          <summary className="marker-none mb-2 mt-3 flex justify-between group-open:mb-2.5">
+          <summary className="marker-none mb-2 mt-3 flex justify-between hover:cursor-pointer group-open:mb-2.5">
             <ServiceTitle number={number}>{title}</ServiceTitle>
             <Image
               src="/svg/arrow-down.svg"
