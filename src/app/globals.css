@@ -161,14 +161,38 @@ body {
 }
 
 @keyframes icon-cube {
-  to { background-position: -297.5px; }
+  to { background-position: -320px; }
 }
 .icon-cube {
   display: flex; 
-  width: 29.7px;
+  width: 32px;
   height: 32px;
   background-image: url("/images/icon-cube-sprite.png");
 }
 .icon-cube:hover {
   animation: icon-cube 1s steps(10) infinite;
+}
+@keyframes icon-globe {
+  to { background-position: -320px; }
+}
+.icon-globe {
+  display: flex; 
+  width: 32px;
+  height: 32px;
+  background-image: url("/images/icon-globe-sprite.png");
+}
+.icon-globe:hover {
+  animation: icon-globe 1s steps(10) infinite;
+}
+@keyframes icon-bezier {
+  to { background-position: -320px; }
+}
+.icon-bezier {
+  display: flex; 
+  width: 32px;
+  height: 32px;
+  background-image: url("/images/icon-bezier-sprite.png");
+}
+.icon-bezier:hover {
+  animation: icon-bezier 1s steps(10) infinite;
 }
