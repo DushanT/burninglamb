@@ -106,7 +106,7 @@ body {
   @apply w-8 border-primary-500 bg-primary-500 !important;
 }
 .slick-dots li button {
-  @apply m-0 h-full w-full rounded-full p-0 focus:ring-8 !important;
+  @apply m-0 h-full w-full rounded-full p-0 focus:ring-4 !important;
 }
 .slick-dots li button::before {
   @apply content-none !important;
@@ -116,7 +116,7 @@ body {
 }
 .slick-prev,
 .slick-next {
-  @apply h-full opacity-0 hover:bg-[var(--bg-secondary)] hover:opacity-100 !important;
+  @apply h-full opacity-0 hover:bg-[var(--bg-secondary)] hover:opacity-100 focus:bg-[var(--bg-secondary)] focus:opacity-100 focus:ring transition-all rounded-full !important;
   background: url(/svg/arrow-right-small.svg) 100% no-repeat !important;
   background-size: contain !important;
 }
