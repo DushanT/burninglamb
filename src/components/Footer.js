@@ -16,19 +16,11 @@ export default function Footer() {
         >
           Get in touch
         </h2>
-        <div className="mb-8 md:mb-5">
-          <Image
-            src="/svg/arrow-down-right.svg"
-            width="32"
-            height="32"
-            className="md:hidden"
-          />
-          <Image
-            src="/svg/arrow-down-right.svg"
-            width="40"
-            height="40"
-            className="hidden md:block"
-          />
+        <div
+          className="mb-8 size-8 md:mb-5 md:size-10"
+          data-aos="fade-down-right"
+        >
+          <Image src="/svg/arrow-down-right.svg" alt="" fill />
         </div>
         <div className="mb-9 md:mb-11">
           <a
@@ -38,26 +30,46 @@ export default function Footer() {
             {mail}
           </a>
         </div>
-
         <div className="mb-[120px] flex gap-2 md:mb-16">
           <Button
-            className="flex items-center gap-2 px-[38px] md:px-12"
+            className="group flex items-center gap-2 px-[38px] md:px-12"
             href="/"
             isAlwaysSmall
           >
-            <Image src="/svg/telegram.svg" width="13" height="13" />{" "}
+            <Image
+              src="/svg/telegram-outlined.svg"
+              width="13"
+              height="13"
+              className="group-hover:hidden"
+            />
+            <Image
+              src="/svg/telegram-filled.svg"
+              width="13"
+              height="13"
+              className="hidden group-hover:block"
+            />{" "}
             <span className="mt-[3px] flex">Telegram</span>
           </Button>
           <Button
-            className="flex items-center gap-2 px-[38px] md:px-12"
+            className="group flex items-center gap-2 px-[38px] md:px-12"
             href="/"
             isAlwaysSmall
           >
-            <Image src="/svg/instagram.svg" width="12" height="12" />{" "}
+            <Image
+              src="/svg/instagram-outlined.svg"
+              width="12"
+              height="12"
+              className="group-hover:hidden"
+            />
+            <Image
+              src="/svg/instagram-filled.svg"
+              width="12"
+              height="12"
+              className="hidden group-hover:block"
+            />{" "}
             <span className="mt-[3px] flex">Instagram</span>
           </Button>
         </div>
-
         <div className="flex flex-col justify-between md:flex-row md:items-end">
           <p className="leading-1.2 mb-2 opacity-40 md:mb-0">
             Burning Lamb s. r. o.
