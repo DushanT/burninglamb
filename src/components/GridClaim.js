@@ -1,5 +1,32 @@
 import Image from "next/image";
 
+const MouseArrow = () => (
+  <svg
+    width="22"
+    height="34"
+    viewBox="0 0 22 34"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="scale-90"
+  >
+    <path
+      id="line"
+      d="M10.999 32.353L10.999 15.945171"
+      stroke="#EAE8E4"
+      stroke-width="1.66"
+      stroke-linecap="square"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M1.2942 21.0243C8.41179 25.9633 11 32.4336 11 32.4336C11 32.4336 13.5882 25.9633 20.7063 21.0243"
+      stroke="#EAE8E4"
+      stroke-width="1.66"
+      stroke-linecap="square"
+      stroke-linejoin="round"
+    />
+  </svg>
+);
+
 export default function AboutGrid({ ...other }) {
   return (
     <div
@@ -54,10 +81,10 @@ export default function AboutGrid({ ...other }) {
           <div className="hidden justify-center gap-2.5 border-l-0.5 border-t-0.5 px-5 py-3.5 md:flex md:flex-col md:items-center">
             <a
               href="#services"
-              className="group grid h-[56px] w-[34px] items-center justify-center rounded-full border-0.5 py-3 transition-colors hover:border-transparent hover:bg-primary-500"
+              className="scroll-down-mouse group grid h-[56px] w-[34px] items-center justify-center rounded-full border-0.5 py-3 transition-colors hover:border-transparent hover:bg-primary-500"
             >
-              <span className="-translate-y-[70%] transition-all duration-500 ease-out group-hover:translate-y-[70%]">
-                <Image src="/svg/arrow-mouse-down.svg" width="18" height="18" />
+              <span className="-translate-y-[50%] transition-all duration-500 ease-out group-hover:translate-y-[10%]">
+                <MouseArrow />
               </span>
               <span className="sr-only">Scroll down</span>
             </a>

@@ -83,11 +83,40 @@ body {
   }
 }
 
+.loading-logo {
+  --count: 14;
+  --scale: 8;
+  --w: 34px;
+  --h: 26px;
+  --width: calc(var(--w) * var(--scale));
+  --height: calc(var(--h) * var(--scale));
+  --bg-width: calc(var(--width) * var(--count));
+
+  background-image: url(/svg/icon-lamb-sprite.svg);
+  background-repeat: no-repeat;
+  background-size: var(--bg-width) var(--height);
+  width: var(--width);
+  height: var(--height);
+  animation: loading-logo 1.5s steps(var(--count)) 0.2s infinite;
+}
+
+@keyframes loading-logo {
+  to { background-position: calc(-1 * 34px * 8 * 14) 0; }
+}
+
 .bl-title {
   aspect-ratio: 343/70;
   background-image: url(/svg/title.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+
+.scroll-down-mouse svg path#line {
+  transition: d 0.3s ease-out;
+}
+.scroll-down-mouse:hover svg path#line {
+  d: path("M10.999 32.353L10.999 0.945171");
 }
 
 .slick-slider {
@@ -128,24 +157,21 @@ body {
   @apply content-none !important;
 }
 
-@keyframes icon-lamb {
-  to { background-position: -423px; }
+@keyframes logo {
+  to { background-position: -476px 0; }
 }
 
-
-.icon-lamb {
-  display: block;
-  width: 32.5px;
-  height: 24px;
-  background-image: url("/images/icon-lamb.png");
-  background-size: 32.5px 24px;
+.logo {
+  display: flex;
+  width: 34px;
+  height: 26px;
+  background-image: url("/svg/icon-lamb-sprite.svg");
+  background-size: 476px 26px;
 }
 
-.icon-lamb:hover {
-  background-image: url("/images/icon-lamb-sprite.png");
-  background-size: unset;
-  background-size: 423px 24px;
-  animation: icon-lamb 1.5s steps(14) infinite;
+.logo:hover {
+  background-image: url("/svg/icon-lamb-sprite-primary.svg");
+  animation: logo 1.5s steps(14) infinite;
 }
 
 @keyframes icon-surface {
@@ -154,9 +180,9 @@ body {
 .icon-surface {
   display: flex;
   width: 35px;
-  height: 32px;
-  background-image: url("/images/icon-surface-sprite.png");
-  background-size: 350px 32px;
+  height: 34px;
+  background-image: url("/svg/icon-surface-sprite.svg");
+  background-size: 350px 34px;
 }
 .icon-surface:hover {
   animation: icon-surface 1s steps(10) infinite;
@@ -168,9 +194,9 @@ body {
 .icon-cube {
   display: flex; 
   width: 32px;
-  height: 32px;
-  background-image: url("/images/icon-cube-sprite.png");
-  background-size: 320px 32px;
+  height: 34px;
+  background-image: url("/svg/icon-cube-sprite.svg");
+  background-size: 320px 34px;
 }
 .icon-cube:hover {
   animation: icon-cube 1s steps(10) infinite;
@@ -181,9 +207,9 @@ body {
 .icon-globe {
   display: flex; 
   width: 32px;
-  height: 32px;
-  background-image: url("/images/icon-globe-sprite.png");
-  background-size: 320px 32px;
+  height: 34px;
+  background-image: url("/svg/icon-globe-sprite.svg");
+  background-size: 320px 34px;
 }
 .icon-globe:hover {
   animation: icon-globe 1s steps(10) infinite;
@@ -194,30 +220,10 @@ body {
 .icon-bezier {
   display: flex; 
   width: 32px;
-  height: 32px;
-  background-image: url("/images/icon-bezier-sprite.png");
-  background-size: 320px 32px;
+  height: 34px;
+  background-image: url("/svg/icon-bezier-sprite.svg");
+  background-size: 320px 34px;
 }
 .icon-bezier:hover {
   animation: icon-bezier 1s steps(10) infinite;
-}
-@media (-webkit-min-device-pixel-ratio: 2) {
-  .icon-lamb {
-    background-image: url("/images/icon-lamb@2x.png");
-  }
-  .icon-lamb:hover {
-    background-image: url("/images/icon-lamb-sprite@2x.png");
-  }
-  .icon-surface {
-    background-image: url("/images/icon-surface-sprite@2x.png");
-  }
-  .icon-cube {
-    background-image: url("/images/icon-cube-sprite@2x.png");
-  }
-  .icon-globe {
-    background-image: url("/images/icon-globe-sprite@2x.png");
-  }
-  .icon-bezier {
-    background-image: url("/images/icon-bezier-sprite@2x.png");
-  }
 }

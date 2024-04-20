@@ -52,9 +52,18 @@ module.exports = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(calc(-50% - 0.5rem))" },
         },
+        slideout: {
+          "0%": { transform: "translateY(0%)" },
+          "99%": { opacity: 1 },
+          "100%": {
+            transform: "translateY(100%)",
+            opacity: 0,
+          },
+        },
       },
       animation: {
         hscroll: "hscroll 15s linear infinite",
+        slideout: "slideout 0.3s ease-in-out 1.5s forwards",
       },
       borderWidth: {
         0.5: "0.5px",

@@ -10,6 +10,7 @@ import History from "@/components/History";
 import Intro from "@/components/Intro";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
+import Loading from "@/components/Loading";
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,7 @@ export default function Home() {
   }, []);
   return (
     <>
+      <Loading />
       <Intro className="mb-[115px] pt-56 md:mb-40 md:pt-64" />
       <HorizontalScroll />
       <About

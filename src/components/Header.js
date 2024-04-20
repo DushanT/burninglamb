@@ -12,7 +12,7 @@ export default function Header({ className, ...other }) {
       {...other}
     >
       <a href="/">
-        <span className="icon-lamb" />
+        <div className="logo" />
       </a>
       <nav className="flex gap-7 lowercase">
         <HeaderLink href="#about" className="hidden md:flex">

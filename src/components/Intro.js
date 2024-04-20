@@ -9,6 +9,7 @@ export default function Intro({ className, ...other }) {
         className="bl-title mb-24 w-full md:mb-2"
         data-aos="zoom-out"
         data-aos-duration="300"
+        data-aos-delay="1000"
       >
         <span className="sr-only">We are Burning lamb</span>
       </h1>
@@ -17,8 +18,14 @@ export default function Intro({ className, ...other }) {
           data-aos="fade-right"
           data-aos-anchor="#grid"
           data-aos-duration="300"
+          data-aos-delay="1000"
         />
-        <GridClaim data-aos="fade-left" data-aos-duration="300" id="grid" />
+        <GridClaim
+          data-aos="fade-left"
+          data-aos-duration="300"
+          data-aos-delay="1000"
+          id="grid"
+        />
       </div>
       <video
         autoPlay
