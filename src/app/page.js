@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Intro className="mb-[115px] pt-56 md:mb-40 md:pt-64" />
-      <HorizontalScroll data-aos="fade-right" />
+      <HorizontalScroll />
       <About
         className="mb-14 pt-[76px] md:mb-[125px] md:pt-36"
         data-aos="fade-up"

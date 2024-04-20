@@ -5,12 +5,20 @@ import { twMerge } from "tailwind-merge";
 export default function Intro({ className, ...other }) {
   return (
     <section className={twMerge("relative", className)} {...other}>
-      <h1 className="bl-title mb-24 w-full md:mb-2" data-aos="zoom-out">
+      <h1
+        className="bl-title mb-24 w-full md:mb-2"
+        data-aos="zoom-out"
+        data-aos-duration="300"
+      >
         <span className="sr-only">We are Burning lamb</span>
       </h1>
       <div className="flex items-end justify-between gap-2">
-        <AnimatedIcons data-aos="fade-right" />
-        <GridClaim data-aos="fade-left" />
+        <AnimatedIcons
+          data-aos="fade-right"
+          data-aos-anchor="#grid"
+          data-aos-duration="300"
+        />
+        <GridClaim data-aos="fade-left" data-aos-duration="300" id="grid" />
       </div>
       <video
         autoPlay

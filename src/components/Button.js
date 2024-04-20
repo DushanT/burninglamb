@@ -7,8 +7,8 @@ export default function Button({ href, children, className, isAlwaysSmall }) {
     <Tag
       href={href}
       className={twMerge(
-        "text-sm/1.3 md:text-base/1.3 tracking-2 text-nowrap rounded-full border px-4.5 pb-0.5 pt-1.5 font-heading lowercase hover:bg-primary-500",
-        isAlwaysSmall ? "" : "md:px-6 md:pb-1.5 md:pt-2 md:text-base",
+        "text-nowrap rounded-full border px-4.5 pb-0.5 pt-1.5 font-heading text-sm/1.3 lowercase tracking-2 transition-colors hover:border-transparent hover:bg-primary-500",
+        isAlwaysSmall ? "" : "md:px-6 md:pb-1.5 md:pt-2 md:text-base/1.3",
         className,
       )}
     >

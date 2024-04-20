@@ -54,7 +54,7 @@ module.exports = {
         },
       },
       animation: {
-        hscroll: "hscroll 20s linear infinite",
+        hscroll: "hscroll 15s linear infinite",
       },
       borderWidth: {
         0.5: "0.5px",
