@@ -13,16 +13,16 @@ const MouseArrow = () => (
       id="line"
       d="M10.999 32.353L10.999 15.945171"
       stroke="#EAE8E4"
-      stroke-width="1.66"
-      stroke-linecap="square"
-      stroke-linejoin="round"
+      strokeWidth="1.66"
+      strokeLinecap="square"
+      strokeLinejoin="round"
     />
     <path
       d="M1.2942 21.0243C8.41179 25.9633 11 32.4336 11 32.4336C11 32.4336 13.5882 25.9633 20.7063 21.0243"
       stroke="#EAE8E4"
-      stroke-width="1.66"
-      stroke-linecap="square"
-      stroke-linejoin="round"
+      strokeWidth="1.66"
+      strokeLinecap="square"
+      strokeLinejoin="round"
     />
   </svg>
 );
