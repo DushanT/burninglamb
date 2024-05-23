@@ -4,7 +4,10 @@ import { twMerge } from "tailwind-merge";
 
 export default function Intro({ className, ...other }) {
   return (
-    <section className={twMerge("relative", className)} {...other}>
+    <section
+      className={twMerge("relative overflow-hidden", className)}
+      {...other}
+    >
       <h1
         className="bl-title mb-24 w-full md:mb-2"
         data-aos="zoom-out"
@@ -33,7 +36,7 @@ export default function Intro({ className, ...other }) {
         muted
         playsInline
         poster="/images/lamb.gif"
-        className="absolute left-0 top-40 z-[-1] scale-[2] md:top-20 md:scale-125 lg:top-0 lg:scale-100"
+        className="absolute left-1/2 top-40 z-[-1] -translate-x-1/2 scale-[2] md:top-20 md:scale-125 lg:top-0 lg:scale-100"
       >
         <source src="/video/hero.mp4" type="video/mp4" />
       </video>

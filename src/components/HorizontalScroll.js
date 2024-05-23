@@ -15,7 +15,7 @@ export default function HorizontalScroll({ className, ...other }) {
     <div>
       <hr className="border-t-0.5 border-text-900" />
       <div
-        className="relative -ml-4 w-[100vw] overflow-x-hidden md:-ml-7 xl:left-1/2 xl:ml-0 xl:-translate-x-1/2"
+        className="relative -ml-4 w-[100vw] overflow-x-hidden md:-ml-7 xl:left-1/2 xl:ml-0 xl:-translate-x-1/2 2xl:w-full"
         {...other}
       >
         <div
@@ -24,7 +24,7 @@ export default function HorizontalScroll({ className, ...other }) {
             className,
           )}
         >
-          {[1, 2, 3, 4].map((n) => (
+          {[1, 2, 3, 4, 5, 6].map((n) => (
             <span
               key={n}
               aria-hidden={n > 1}
