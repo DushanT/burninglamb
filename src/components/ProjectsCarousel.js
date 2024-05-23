@@ -9,11 +9,11 @@ import projects from "@/data/projects";
 export default function ProjectsCarousel() {
   const settings = {
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    hoverPause: true,
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    // hoverPause: true,
     speed: 700,
     // desktop first approach
     slidesToShow: 4,

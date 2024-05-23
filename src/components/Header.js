@@ -5,10 +5,7 @@ import HeaderLink from "./HeaderLink";
 export default function Header({ className, ...other }) {
   return (
     <header
-      className={twMerge(
-        "sticky top-0 z-10 flex items-center justify-between border-b-0.5 border-text-900 bg-[var(--background-rgb)] py-3",
-        className,
-      )}
+      className={twMerge(" flex items-center justify-between ", className)}
       {...other}
     >
       <a href="/">

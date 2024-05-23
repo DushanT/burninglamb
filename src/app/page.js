@@ -14,20 +14,17 @@ import Loading from "@/components/Loading";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({});
   }, []);
   return (
     <>
       <Loading />
       <Intro className="mb-[115px] pt-56 md:mb-40 md:pt-64" />
-      <HorizontalScroll />
-      <About
-        className="mb-14 pt-[76px] md:mb-[125px] md:pt-36"
-        data-aos="fade-up"
-      />
-      <History />
-      <Services className="mb-[120px] pt-[100px] md:mb-[200px] md:pt-[265px]" />
-      <Projects />
+      <HorizontalScroll className="pb-5 pt-7 md:mx-0 md:pb-8 md:pt-10" />
+      <About className="mb-14 pt-20 md:mb-[125px] md:pt-36" />
+      <History className="mb-[20px] md:mb-[185px]" />
+      <Services className="mb-[80px] pt-20 md:mb-[120px]" />
+      <Projects className="mb-28 pt-20 md:mb-40" />
     </>
   );
 }

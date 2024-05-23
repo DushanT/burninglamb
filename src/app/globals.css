@@ -60,6 +60,7 @@
   --bg-footer: #121212;
   --bg-secondary: #1c1c1c;
   --max-width: 1440px;
+  --header-max-width: 1380px;
 }
 /* } */
 
@@ -226,4 +227,8 @@ body {
 }
 .icon-bezier:hover {
   animation: icon-bezier 1s steps(10) infinite;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }

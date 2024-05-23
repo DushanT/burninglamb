@@ -33,7 +33,7 @@ export default function Intro({ className, ...other }) {
         muted
         playsInline
         poster="/images/lamb.gif"
-        className="absolute left-0 top-0 z-[-1]"
+        className="absolute left-0 top-40 z-[-1] scale-[2] md:top-20 md:scale-125 lg:top-0 lg:scale-100"
       >
         <source src="/video/hero.mp4" type="video/mp4" />
       </video>
