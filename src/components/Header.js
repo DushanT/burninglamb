@@ -1,16 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import HeaderLink from "./HeaderLink";
 
 export default function Header({ className, ...other }) {
+  function handleClick() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
   return (
     <header
       className={twMerge(" flex items-center justify-between ", className)}
       {...other}
     >
-      <a href="/">
+      <button onClick={handleClick}>
         <div className="logo" />
-      </a>
+      </button>
       <nav className="flex gap-7 lowercase">
         <HeaderLink href="#about" className="hidden md:flex">
           About
