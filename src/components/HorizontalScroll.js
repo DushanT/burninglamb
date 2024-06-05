@@ -3,6 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 const Arrow = () => (
   <Image
+    alt=""
     src="/svg/arrow-right.svg"
     width="51"
     height="29"

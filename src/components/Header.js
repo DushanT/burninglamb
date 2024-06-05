@@ -34,12 +34,14 @@ export default function Header({ className, ...other }) {
           icon={
             <>
               <Image
+                alt=""
                 src="/svg/arrow-left-down.svg"
                 width="20"
                 height="20"
                 className="group-hover:hidden"
               />
               <Image
+                alt=""
                 src="/svg/arrow-left-down-primary.svg"
                 width="20"
                 height="20"

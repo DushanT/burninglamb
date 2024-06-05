@@ -6,12 +6,14 @@ export default [
     icon: (
       <>
         <Image
+          alt=""
           src="/svg/asterisk.svg"
           width="40"
           height="40"
           className="hidden md:block"
         />
         <Image
+          alt=""
           src="/svg/asterisk.svg"
           width="32"
           height="32"
@@ -28,12 +30,14 @@ export default [
     icon: (
       <>
         <Image
+          alt=""
           src="/svg/asterisk-quarter.svg"
           width="37"
           height="38"
           className="hidden md:block"
         />
         <Image
+          alt=""
           src="/svg/asterisk-quarter.svg"
           width="30"
           height="30"
@@ -50,12 +54,14 @@ export default [
     icon: (
       <>
         <Image
+          alt=""
           src="/svg/asterisk-half.svg"
           width="42"
           height="29"
           className="hidden md:block"
         />
         <Image
+          alt=""
           src="/svg/asterisk-half.svg"
           width="32"
           height="23"

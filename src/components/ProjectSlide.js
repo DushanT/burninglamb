@@ -16,6 +16,7 @@ export default function Slide({
     >
       <div className="md:hidden">
         <Image
+          alt=""
           src={`/images/projects/mobile/${image}.png`}
           width="343"
           height="240"
@@ -24,6 +25,7 @@ export default function Slide({
       </div>
       <div className="hidden md:block">
         <Image
+          alt=""
           src={`/images/projects/desktop/${image}.png`}
           width="1014"
           height="1470"

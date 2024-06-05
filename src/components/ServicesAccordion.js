@@ -12,6 +12,7 @@ const ServicesAccordion = ({ className }) => (
           <summary className="marker-none mb-2 mt-3 flex justify-between hover:cursor-pointer group-open:mb-2.5">
             <ServiceTitle number={number}>{title}</ServiceTitle>
             <Image
+              alt=""
               src="/svg/arrow-down.svg"
               width="18"
               height="18"

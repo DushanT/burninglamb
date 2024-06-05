@@ -37,12 +37,14 @@ export default function Footer() {
             isAlwaysSmall
           >
             <Image
+              alt=""
               src="/svg/telegram-outlined.svg"
               width="13"
               height="13"
               className="group-hover:hidden"
             />
             <Image
+              alt=""
               src="/svg/telegram-filled.svg"
               width="13"
               height="13"
@@ -56,12 +58,14 @@ export default function Footer() {
             isAlwaysSmall
           >
             <Image
+              alt=""
               src="/svg/instagram-outlined.svg"
               width="12"
               height="12"
               className="group-hover:hidden"
             />
             <Image
+              alt=""
               src="/svg/instagram-filled.svg"
               width="12"
               height="12"

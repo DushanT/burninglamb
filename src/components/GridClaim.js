@@ -60,6 +60,7 @@ export default function AboutGrid({ ...other }) {
         <div className="flex items-center justify-center gap-3.5 border-l-0.5 px-1 pb-2 pt-1.5 text-center text-2xs font-bold leading-0.9 tracking-2 md:grid md:grid-cols-[1fr,auto,1fr,auto,1fr] md:gap-12 md:px-4 md:pb-2.5 md:pt-2.5 md:text-base">
           <div>Innovate</div>
           <Image
+            alt=""
             src="/svg/arrow-right-small.svg"
             width="10"
             height="10"
@@ -67,6 +68,7 @@ export default function AboutGrid({ ...other }) {
           />
           <div>Elevate</div>
           <Image
+            alt=""
             src="/svg/arrow-right-small.svg"
             width="10"
             height="10"
