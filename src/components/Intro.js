@@ -1,6 +1,7 @@
 import GridClaim from "./GridClaim";
 import AnimatedIcons from "./AnimatedIcons";
 import { twMerge } from "tailwind-merge";
+import Image from "next/image";
 
 export default function Intro({ className, ...other }) {
   return (
@@ -30,16 +31,13 @@ export default function Intro({ className, ...other }) {
           id="grid"
         />
       </div>
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="/images/lamb.gif"
+      <Image
+        alt=""
+        src="/images/lamb.gif"
         className="absolute left-1/2 top-40 z-[-1] -translate-x-1/2 scale-[2] md:top-20 md:scale-125 lg:top-0 lg:scale-100"
-      >
-        <source src="/video/hero.mp4" type="video/mp4" />
-      </video>
+        width="1440"
+        height="853"
+      />
     </section>
   );
 }
