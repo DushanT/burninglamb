@@ -240,3 +240,29 @@ body {
 summary::-webkit-details-marker {
   display: none;
 }
+
+.explode-circle {
+  animation: explode 0.7s forwards;
+}
+
+.desplode-circle {
+  animation: desplode 0.3s forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(50);
+  }
+}
+
+@keyframes desplode {
+  0% {
+    transform: scale(50);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

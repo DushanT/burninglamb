@@ -11,7 +11,7 @@ export default function Footer() {
     >
       <div className="mx-auto max-w-[var(--max-width)] px-4 md:px-[30px]">
         <h2
-          className="text-10xl md:text-12xl -tracking-4 leading-0.9 mb-6 font-heading lowercase md:mb-8"
+          className="mb-6 font-heading text-10xl lowercase leading-0.9 -tracking-4 md:mb-8 md:text-12xl"
           data-aos="fade-down"
         >
           Get in touch
@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
         <div className="mb-9 md:mb-11">
           <a
-            className="leading-0.9 text-5xl font-semibold underline hover:text-primary-500 md:text-9xl"
+            className="text-5xl font-semibold leading-0.9 underline hover:text-primary-500 md:text-9xl"
             href={`mailto:${mail}`}
           >
             {mail}
@@ -75,7 +75,7 @@ export default function Footer() {
           </Button>
         </div>
         <div className="flex flex-col justify-between md:flex-row md:items-end">
-          <p className="leading-1.2 mb-2 opacity-40 md:mb-0">
+          <p className="mb-2 leading-1.2 opacity-40 md:mb-0">
             Burning Lamb s. r. o.
             <br />
             Karpatské námestie 7770/10A
@@ -85,7 +85,7 @@ export default function Footer() {
             <br />
             BIZ ID: 56 035 136
           </p>
-          <p className="tracking-8 leading-1.2 text-sm uppercase opacity-40">
+          <p className="text-sm uppercase leading-1.2 tracking-8 opacity-40">
             © {new Date().getFullYear()} Burning lamb — Digital Agency
           </p>
         </div>

@@ -34,8 +34,8 @@ export default function Slide({
       </div>
       <div className="h-full w-full px-2 py-3 md:absolute md:bottom-0 md:flex md:flex-col md:justify-between md:bg-gradient-to-t md:from-[rgba(23,23,23,0.9)] md:from-15% md:via-transparent md:via-50% md:to-transparent md:p-6 md:transition-all md:group-hover:bg-[#171717] md:group-hover:bg-opacity-80">
         <div className="md:order-2">
-          <h3 className="leading-0.9 mb-5 flex items-baseline gap-6 bg-transparent text-3xl font-semibold md:text-4xl">
-            <span className="leading-0.9 text-xl font-bold text-primary-500 md:text-2xl">
+          <h3 className="mb-5 flex items-baseline gap-6 bg-transparent text-3xl font-semibold leading-0.9 md:text-4xl">
+            <span className="text-xl font-bold leading-0.9 text-primary-500 md:text-2xl">
               .0{index + 1}
             </span>{" "}
             <span className="font-bold">{title}</span>
@@ -48,7 +48,7 @@ export default function Slide({
             ))}
           </div>
         </div>
-        <p className="md:leading-1.2 leading-1.4 text-sm font-semibold md:order-1 md:text-base md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
+        <p className="text-sm font-semibold leading-1.4 md:order-1 md:text-base md:leading-1.2 md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
           {description}
         </p>
       </div>
