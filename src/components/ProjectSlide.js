@@ -48,7 +48,7 @@ export default function Slide({
             ))}
           </div>
         </div>
-        <p className="text-sm font-semibold leading-1.4 md:order-1 md:text-base md:leading-1.2 md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
+        <p className="text-base font-semibold leading-1.2 md:order-1 md:opacity-0 md:transition-opacity md:group-hover:opacity-100">
           {description}
         </p>
       </div>
