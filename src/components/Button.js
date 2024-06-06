@@ -49,7 +49,7 @@ export default function Button({ href, children, className, isAlwaysSmall }) {
       href={href}
       ref={buttonRef}
       className={twMerge(
-        "group/button relative overflow-hidden text-nowrap rounded-full border px-4.5 pb-0.5 pt-1.5 font-heading text-sm/1.3 lowercase tracking-2 transition-all hover:border-transparent",
+        "group/button relative z-0 overflow-hidden text-nowrap rounded-full border px-4.5 pb-0.5 pt-1.5 font-heading text-sm/1.3 lowercase tracking-2 transition-all hover:border-transparent",
         isAlwaysSmall ? "" : "md:px-6 md:pb-1.5 md:pt-2 md:text-base/1.3",
         className,
       )}
