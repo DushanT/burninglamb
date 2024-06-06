@@ -19,7 +19,7 @@ export default [
   },
   {
     number: ".03",
-    title: "Motion design & animations",
+    title: "Motion & animations",
     items: ["web animations", "video effects", "animated logo", "short videos"],
   },
   {
